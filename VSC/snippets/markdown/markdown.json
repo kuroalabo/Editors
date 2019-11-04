@@ -1,0 +1,70 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"link テンプレ": {
+		"prefix": "sankou",
+		"body": [
+			"- [$1]() {発行元: , 発行日時: }",
+			"	- 引用",
+			"		- "
+			"	- コメント"
+			"		- "
+		],
+		"description": "参考文献用のリンク"
+	},
+	"vsc": {
+		"prefix": "vsc",
+		"body": [
+			"Visual Studio Code",
+		],
+		"description": "vsc をすぐ出す" 
+	},
+	"mermaid template": {
+		"prefix": "mermaid_template",
+		"body": [
+			"```mermaid",
+			"graph LR ",
+			"%% declaring nodes and subgraphs",
+			"subgraph sid1",
+			"    ID1[Name1]",
+			"    ID2[Name2]",
+			"end",
+			"subgraph sid2",
+			"    ID3[Name3]",
+			"end",
+			"%% declare the relations",
+			"ID1 --> ID2",
+			"ID3 --> ID2",
+			"%% 以下は書くとき用に",
+			"C---|実線|D",
+			"C-->|実線矢印|D",
+			"E-.-|点線|F",
+			"E-.->|点線矢印|F",
+			" ",
+			"G===|太線|H",
+			"G==>|太線矢印|H",
+			"```"
+		],
+		"description": "mermaid用のテンプレ" 
+	},
+	"mermaid line": {
+		"prefix": "mermaid_line",
+		"body": [
+			"-->|$1|",
+		],
+		"description": "mermaid での関係の記述を素早くする" 
+	},
+	
+
+}

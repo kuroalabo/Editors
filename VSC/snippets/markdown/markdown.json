@@ -12,13 +12,14 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
 	"link テンプレ": {
 		"prefix": "sankou",
 		"body": [
-			"- [$1]() {発行元: , 発行日時: }",
-			"	- 引用",
+			"- [$1]() {Publisher: , Time: }",
+			"	1. Quote",
 			"		- "
-			"	- コメント"
+			"	2. Comments"
 			"		- "
 		],
 		"description": "参考文献用のリンク"
@@ -65,6 +66,19 @@
 		],
 		"description": "mermaid での関係の記述を素早くする" 
 	},
-	
-
+	"imglink": {
+		"prefix" :"imglink",
+		"body": [
+			"![$1](../imgs/$2)",
+		],
+	},
+	"food": {
+		"prefix" :"food",
+		"body": [
+			"1. Calories",
+			"    - ",
+			"2. Reference (If any)",
+			"    - ",
+		],
+	},
 }
